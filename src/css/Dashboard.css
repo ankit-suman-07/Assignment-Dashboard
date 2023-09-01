@@ -1,12 +1,35 @@
 .dashboard-comp {
     border: 2px solid black;
-    width: 85vw;
+    width: 85%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topbar-div {
+    border: 1px solid black;
+    height: 30px;
 }
 
 .data-card-div {
     border: 2px solid red;
+    height: 80px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    padding: 10px;
+    
+}
+
+.graph-div {
+    border: 2px solid red;
+    height: 240px;
+}
+
+.bottom-div {
+    height: 180px;
+    border: 2px solid yellow;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
 }

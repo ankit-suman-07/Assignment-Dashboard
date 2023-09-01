@@ -9,17 +9,22 @@ import  { Schedule } from '../components/Schedule';
 export const Dashboard = () => {
   return (
     <div className='dashboard-comp' >
+      <div className='topbar-div' >
         <TopBar />
-        <div className='data-card-div' >
+      </div>
+      <div className='data-card-div' >
           <DataCard />
           <DataCard />
           <DataCard />
           <DataCard />
-        </div>
-        
+      </div>
+      <div className='graph-div' >
         <Graph />
+      </div>
+      <div className='bottom-div' >
         <PieChart />
         <Schedule />
+      </div>
     </div>
   )
 }
