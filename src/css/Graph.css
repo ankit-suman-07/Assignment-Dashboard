@@ -1,4 +1,38 @@
 .graph-comp {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100%;
+}
+
+.chart-head-div {
+    padding: 10px 20px 0 20px;
+}
+
+.graph-legends-div {
+    font-size: 13px;
+    padding: 0 20px 0 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-legends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+}
+
+.pink {
+    background-color: #E9A0A0;
+}
+
+.green {
+    background-color: #9BDD7C;
 }

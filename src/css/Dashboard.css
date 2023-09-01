@@ -1,4 +1,5 @@
 .dashboard-comp {
+    
     border: 2px solid black;
     width: 85%;
     padding: 30px;
@@ -22,14 +23,16 @@
 }
 
 .graph-div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: #ffff;
+    border-radius: 10px;
     height: 240px;
 }
 
 .bottom-div {
     height: 200px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
