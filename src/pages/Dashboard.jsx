@@ -8,8 +8,7 @@ import  { Schedule } from '../components/Schedule';
 
 export const Dashboard = () => {
   return (
-    <div>
-      Dashboard
+    <div className='dashboard-comp' >
         <TopBar />
         <div className='data-card-div' >
           <DataCard />

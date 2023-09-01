@@ -3,6 +3,8 @@ import "../css/Graph.css";
 
 export const Graph = () => {
   return (
-    <div>Graph</div>
+    <div className='graph-comp' >
+      Graph
+    </div>
   )
 }

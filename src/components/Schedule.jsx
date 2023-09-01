@@ -3,6 +3,8 @@ import "../css/Schedule.css";
 
 export const Schedule = () => {
   return (
-    <div>Schedule</div>
+    <div className='schedule-comp' >
+      Schedule
+    </div>
   )
 }

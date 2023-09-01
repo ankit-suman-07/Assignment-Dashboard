@@ -3,6 +3,10 @@ import "../css/TopBar.css";
 
 export const TopBar = () => {
   return (
-    <div>TopBar</div>
+    <div className='top-bar-comp' >
+        Dashboard
+        Search
+        Profile
+    </div>
   )
 }
