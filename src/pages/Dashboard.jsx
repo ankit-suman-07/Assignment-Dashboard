@@ -1,0 +1,26 @@
+import React from 'react';
+import "../css/Dashboard.css";
+import { TopBar } from '../components/TopBar';
+import  { DataCard } from '../components/DataCard';
+import  { Graph } from '../components/Graph';
+import  { PieChart } from '../components/PieChart';
+import  { Schedule } from '../components/Schedule';
+
+export const Dashboard = () => {
+  return (
+    <div>
+      Dashboard
+        <TopBar />
+        <div className='data-card-div' >
+          <DataCard />
+          <DataCard />
+          <DataCard />
+          <DataCard />
+        </div>
+        
+        <Graph />
+        <PieChart />
+        <Schedule />
+    </div>
+  )
+}
