@@ -13,3 +13,7 @@
     width: 85%;
     padding: 20px;
 }
+
+table, tr, td {
+    border: 1px solid red;
+}
