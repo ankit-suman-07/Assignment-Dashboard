@@ -15,6 +15,14 @@ export const Users = () => {
       <div className='top-bar-head' >
       Users
       </div>
+      <div className='user-row-comp' >
+            <span className='user-id bold' >ID</span>
+            
+            <span className='user-name bold' >Username</span>
+            <span className='user-email bold' >Email ID</span>
+            <span className='user-type bold' >User Type</span>
+    </div>
+      <div className='user-table' >
       {
         UserDB.map((user, idx) => {
           return(
@@ -22,6 +30,8 @@ export const Users = () => {
           );
         })
       }
+      </div>
+      
       </div>
     </div>
   )

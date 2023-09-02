@@ -9,11 +9,17 @@
 }
 
 .users-div {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 85%;
     padding: 20px;
 }
 
-table, tr, td {
-    border: 1px solid red;
+.bold {
+    font-weight: 600;
+}
+
+.user-table {
+    /* border: 2px solid black; */
+    /* margin-top: 20px; */
+    /* padding: 10px; */
 }
