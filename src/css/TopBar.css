@@ -12,3 +12,35 @@
     font-family: sans-serif;
     font-weight: 600;
 }
+
+.search-bar {
+    border: 2px solid black;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    background-color: #ffff;
+}
+
+
+.top-bar-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.top-bar-bell img {
+    height: 20px;
+}
+
+.top-bar-id {
+    /* border: 2px solid black; */
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.top-bar-id img {
+    height: 100%;
+}
