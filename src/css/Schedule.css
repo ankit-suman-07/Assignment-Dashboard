@@ -1,3 +1,46 @@
 .schedule-comp {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.schedule-title-div {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.schedule-task-1, .schedule-task-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0 2px 10px;
+    font-family: sans-serif;
+}
+
+.schedule-task-1 {
+    border-left: 5px solid #6972c3;
+}
+
+.schedule-task-2 {
+    border-left: 5px solid #9BDD7C;
+}
+
+.schedule-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+}
+
+.schedule-time {
+    font-size: 13px;
+    color: lightgrey;
+}
+
+.schedule-location {
+    font-size: 13px;
+    color: lightgrey;
 }
