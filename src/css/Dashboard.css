@@ -2,14 +2,14 @@
     
     /* border: 2px solid black; */
     width: 85%;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .topbar-div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 30px;
 }
 

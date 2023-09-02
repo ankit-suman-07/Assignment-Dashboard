@@ -1,3 +1,14 @@
 .top-bar-comp {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    /* background-color: #ffff; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-head {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
 }
