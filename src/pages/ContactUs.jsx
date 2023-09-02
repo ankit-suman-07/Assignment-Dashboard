@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import "../css/ContactUs.css";
+import { Sidebar } from '../components/Sidebar';
 
 export const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <div className='contact-comp' >
+      <Sidebar />
+      <div  className='contact-div' >
+
+      </div>
+
+    </div>
   )
 }

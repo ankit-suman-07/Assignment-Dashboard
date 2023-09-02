@@ -22,7 +22,7 @@ export const Sidebar = () => {
             </div>
         
         <div className="sidebar-nav" >
-                <NavLink exact to="/dashboard" className="link"  activeClassName="active" onClick={ () => {setNavBar(false)} }  ><img src={DashboardIcon} /> <span>Dashboard</span></NavLink>
+                <NavLink exact to="/" className="link"  activeClassName="active" onClick={ () => {setNavBar(false)} }  ><img src={DashboardIcon} /> <span>Dashboard</span></NavLink>
                 <NavLink exact to="/transactions" className="link"  activeClassName="active" onClick={ () => {setNavBar(false)} }  ><img src={TransactionIcon} /> <span>Transactions</span></NavLink>
                 <NavLink exact to="/schedulespage" className="link"  activeClassName="active" onClick={ () => {setNavBar(false)} }  ><img src={ScheduleIcon} /> <span>Schedules</span></NavLink>
                 <NavLink exact to="/users" className="link"  activeClassName="active" onClick={ () => {setNavBar(false)} }  ><img src={UsersIcon} /> <span>Users</span></NavLink>

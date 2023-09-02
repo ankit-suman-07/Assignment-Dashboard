@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
+import "../css/SchedulesPage.css";
+import { Sidebar } from '../components/Sidebar';
 
 export const SchedulesPage = () => {
   return (
-    <div>SchedulesPage</div>
+    <div className='schedule-page-comp' >
+        <Sidebar />
+        <div className='schedule-page-div' >
+
+        </div>
+    </div>
   )
 }

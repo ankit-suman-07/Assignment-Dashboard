@@ -1,0 +1,14 @@
+.users-comp {
+    background-color: #F5F5F5;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 40px);
+}
+
+.users-div {
+    border: 2px solid black;
+    width: 85%;
+}
