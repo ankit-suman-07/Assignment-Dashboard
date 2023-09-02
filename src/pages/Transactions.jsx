@@ -7,7 +7,9 @@ export const Transactions = () => {
     <div className='transaction-comp' >
       <Sidebar />
       <div className='transaction-div' > 
-
+      <div className='top-bar-head' >
+        Transactions
+      </div>
       </div>
     </div>
   )

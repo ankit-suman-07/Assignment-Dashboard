@@ -8,7 +8,9 @@ export const Users = () => {
     <div className='users-comp' >
       <Sidebar />
       <div className='users-div' >
-
+      <div className='top-bar-head' >
+        Users
+      </div>
       </div>
     </div>
   )

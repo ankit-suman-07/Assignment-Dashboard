@@ -7,7 +7,9 @@ export const SchedulesPage = () => {
     <div className='schedule-page-comp' >
         <Sidebar />
         <div className='schedule-page-div' >
-
+        <div className='top-bar-head' >
+          Schedules
+        </div>
         </div>
     </div>
   )

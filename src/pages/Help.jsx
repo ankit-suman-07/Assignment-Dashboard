@@ -8,7 +8,9 @@ export const Help = () => {
     <div className='help-comp' >
       <Sidebar />
       <div  className='help-div' >
-
+      <div className='top-bar-head' >
+        Help
+      </div>
       </div>
 
     </div>

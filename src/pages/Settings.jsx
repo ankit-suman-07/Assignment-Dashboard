@@ -8,7 +8,9 @@ export const Settings = () => {
     <div className='settings-comp' >
       <Sidebar />
       <div  className='settings-div' >
-
+      <div className='top-bar-head' >
+        Settings
+      </div>
       </div>
 
     </div>
