@@ -1,5 +1,5 @@
 .pie-chart-comp {
-    /* width: 70%; */
+    width: 100%;
     /* border: 2px solid rebeccapurple; */
     border-radius: 10px;
     overflow: hidden;
@@ -10,4 +10,46 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px 0 20px;
+}
+
+.pie-chart-main {
+    display: flex;
+}
+
+.pie-chart-details {
+    /* border: 1px solid black; */
+    width: 45%;
+    margin-right: 20px;
+}
+
+.pie-chartitem {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 5px 10px;
+}
+
+.item-name {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.item-amount {
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: gray;
+}
+
+.pie-chart-inner {
+    display: flex;
+    align-items: center;
+}
+
+.yellow {
+    background-color: #F6DC7D;
+}
+
+.white {
+    background-color: #ffff;
 }
