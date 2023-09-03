@@ -1,13 +1,8 @@
-import React from 'react';
+import {React, useState} from 'react';
 import "../css/PieChart.css";
 import { Chart } from "react-google-charts";
+import { TopProductData } from '../helper/TopProductsDB';
 
-export const data = [
-  ["Products", "Sales"],
-  ["Basic Tees", 55],
-  ["Custom Short Pants", 31],
-  ["Super Hoodies", 14],
-];
 
 export const options = {
   colors: ["#98D89E", "#EE8484", "F6DC7D"],
@@ -18,7 +13,11 @@ export const options = {
 
 
 export const PieChart = () => {
-  
+  const [selectedValue, setSelectedValue] = useState('0');
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
 
   return (
     <div className='pie-chart-comp' >
@@ -27,7 +26,7 @@ export const PieChart = () => {
           <span>
     <form>
         <label for="startMonth"></label>
-        <select id="startMonth" name="startMonth">
+        <select id="startMonth" name="startMonth" value={selectedValue} onChange={handleChange}>
             <option value="0" selected>Jan - Feb 2023</option>
             <option value="1">Feb - March 2023</option>
             <option value="2">March - Apr 2023</option>
@@ -49,7 +48,7 @@ export const PieChart = () => {
       <div className='pie-chart-main' >
         <Chart
           chartType="PieChart"
-          data={data}
+          data={TopProductData[selectedValue % 6]}
           options={options}
           width={"70%"}
           height={"170px"}
@@ -58,30 +57,30 @@ export const PieChart = () => {
         <div className='pie-chart-details' >
           <div className='pie-chartitem' >
             <div className='pie-chart-inner' >
-              <div className='circle green' ></div> <span className='item-name' >Basic Tees</span>
+              <div className='circle green' ></div> <span className='item-name' >{ TopProductData[selectedValue % 6][1][0] }</span>
             </div>
             <div className='pie-chart-inner' >
-              <div className='circle white' ></div> <span className='item-amount' >55%</span>
-            </div>
-            
-          </div>
-
-          <div className='pie-chartitem' >
-            <div className='pie-chart-inner' >
-              <div className='circle yellow' ></div> <span className='item-name' >Custom Short Pants</span>
-            </div>
-            <div className='pie-chart-inner' >
-              <div className='circle white' ></div> <span className='item-amount' >31%</span>
+              <div className='circle white' ></div> <span className='item-amount' >{ TopProductData[selectedValue % 6][1][1] } %</span>
             </div>
             
           </div>
 
           <div className='pie-chartitem' >
             <div className='pie-chart-inner' >
-              <div className='circle pink' ></div> <span className='item-name' >Super Hoodies</span>
+              <div className='circle yellow' ></div> <span className='item-name' >{ TopProductData[selectedValue % 6][2][0] }</span>
             </div>
             <div className='pie-chart-inner' >
-              <div className='circle white' ></div> <span className='item-amount' >14%</span>
+              <div className='circle white' ></div> <span className='item-amount' >{ TopProductData[selectedValue % 6][2][1] } %</span>
+            </div>
+            
+          </div>
+
+          <div className='pie-chartitem' >
+            <div className='pie-chart-inner' >
+              <div className='circle pink' ></div> <span className='item-name' >{ TopProductData[selectedValue % 6][3][0] }</span>
+            </div>
+            <div className='pie-chart-inner' >
+              <div className='circle white' ></div> <span className='item-amount' >{ TopProductData[selectedValue % 6][3][1] } %</span>
             </div>
             
           </div>

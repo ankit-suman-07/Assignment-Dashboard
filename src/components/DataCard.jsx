@@ -3,7 +3,7 @@ import "../css/DataCard.css";
 import Transaction from "../icons/transaction.png";
 
 export const DataCard = ({title, data, icon, color}) => {
-  const val = 12345;
+  
   return (
     <div className='datacard' style={{ backgroundColor: color }} >
       <div className='datacard-image-div' >
