@@ -1,14 +1,7 @@
-import React from 'react';
+import { React, useState} from 'react';
 import "../css/Graph.css";
+import { ActivitiesData } from '../helper/ActivitiesDB';
 import { Chart } from "react-google-charts";
-
-export const data = [
-  ["Week", "Value 1", "Value 2"],
-  ["Week 1", 390, 400],
-  ["Week 2", 150, 220],
-  ["Week 3", 540, 350],
-  ["Week 4", 120, 220],
-];
 
 
 export const options = {
@@ -18,13 +11,18 @@ export const options = {
   colors: ["#E9A0A0", "#9BDD7C"],
   hAxis: {
     gridlines: {
-      count: data.length - 1, // Number of vertical gridlines (one less than data points)
+      count: ActivitiesData[0].length - 1, // Number of vertical gridlines (one less than data points)
       color: "lightgray", // Color of gridlines
     },
   },
 };
 
 export const Graph = () => {
+  const [selectedValue, setSelectedValue] = useState('0');
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
   return (
     <div className='chart-div' >
       <div className='chart-head-div' >
@@ -33,7 +31,7 @@ export const Graph = () => {
       <div className='graph-legends-div' >
       <form>
         <label for="month"></label>
-        <select id="month" name="month">
+        <select id="month" name="month" value={selectedValue} onChange={handleChange}>
             <option value="0" selected>Jan - Feb 2023</option>
             <option value="1">Feb - March 2023</option>
             <option value="2">March - Apr 2023</option>
@@ -60,7 +58,7 @@ export const Graph = () => {
       chartType="LineChart"
       width="100%"
       height="180px"
-      data={data}
+      data={ActivitiesData[selectedValue % 6]}
       options={options}
     />
     </div>
