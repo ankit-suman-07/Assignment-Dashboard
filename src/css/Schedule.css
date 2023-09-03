@@ -28,19 +28,13 @@
     
 }
 
-.schedule-task-1, .schedule-task-2 {
+.schedule-task{
     display: flex;
     flex-direction: column;
     padding: 2px 0 2px 10px;
     font-family: sans-serif;
-}
-
-.schedule-task-1 {
-    border-left: 5px solid #6972c3;
-}
-
-.schedule-task-2 {
-    border-left: 5px solid #9BDD7C;
+    margin: 20px 0 10px 0 ;
+    
 }
 
 .schedule-name {
@@ -58,3 +52,4 @@
     font-size: 13px;
     color: lightgrey;
 }
+
