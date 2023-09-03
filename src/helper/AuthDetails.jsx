@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom'; // Import useHistory
 import { auth } from './Firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
@@ -11,6 +12,8 @@ export const AuthDetails = ({ children }) => {
     const [userEmail, setUserEmail] = useState("");
     const [userPhoto, setUserPhoto] = useState("");
 
+   
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -19,6 +22,9 @@ export const AuthDetails = ({ children }) => {
                 setUserName(user.displayName || "");
                 setUserEmail(user.email || "");
                 setUserPhoto(user.photoURL || "");
+                
+                
+                
             } else {
                 setAuthUser(null);
                 setLoggedIn(false);
@@ -28,6 +34,7 @@ export const AuthDetails = ({ children }) => {
         return () => {
             // Unsubscribe when the component unmounts
             unsubscribe();
+            
         };
     }, []);
 
@@ -42,6 +49,7 @@ export const AuthDetails = ({ children }) => {
     return (
         <AuthContext.Provider value={{ loggedIn, userName, userEmail, userPhoto }}>
             {children}
+
         </AuthContext.Provider>
     );
 };

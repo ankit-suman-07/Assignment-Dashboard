@@ -12,9 +12,12 @@ export const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    
     const googleSignUp = () => {
         signInWithPopup(auth, googleAuth).then((data) => {
             setEmail(data.user.email);
+                window.location.href = '/mainpage';
+            
         })
     }
 
@@ -62,7 +65,8 @@ export const SignUp = () => {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         <a href='#' >Forgot password?</a>
-                        <button type='submit' className='signin-btn' >Sign In</button>
+                        
+                        <button type='submit' className='signin-btn'  >Sign In</button>  
                     </form>
                 
                 <div className='signup-register' >
