@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MainPage } from './pages/MainPage';
+import { SignUp } from './pages/SignUp';
 import { Sidebar } from './components/Sidebar';
 import { Dashboard } from './pages/Dashboard';
 import {Transactions} from "./pages/Transactions";
@@ -17,6 +18,7 @@ function App() {
       <Router>
           <Routes>
             <Route path="/" element={<MainPage/>} />
+            <Route path="/signup" element={<SignUp/>} />
             <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/transactions" element={<Transactions/>} />
             <Route path="/schedulespage" element={<SchedulesPage/>} />
