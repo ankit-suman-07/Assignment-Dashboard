@@ -1,37 +1,47 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { auth } from './Firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
-export const AuthDetails = () => {
+export const AuthContext = createContext();
 
+export const AuthDetails = ({ children }) => {
     const [authUser, setAuthUser] = useState(null);
+    const [loggedIn, setLoggedIn] = useState(false);
+    const [userName, setUserName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
+    const [userPhoto, setUserPhoto] = useState("");
+
     useEffect(() => {
-        const listen = onAuthStateChanged(auth, (user) => {
-            if(user) {
-                setAuthUser(user)
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setAuthUser(user);
+                setLoggedIn(true);
+                setUserName(user.displayName || "");
+                setUserEmail(user.email || "");
+                setUserPhoto(user.photoURL || "");
+            } else {
+                setAuthUser(null);
+                setLoggedIn(false);
             }
-            else{
-                setAuthUser(null)
-            }
-        })
+        });
+
         return () => {
-            listen();
-        }
-    }, [])
+            // Unsubscribe when the component unmounts
+            unsubscribe();
+        };
+    }, []);
 
     const userSignOut = () => {
-        signOut(auth).then(() => {
-            console.log("Signed Out");
-            setAuthUser(null);
-        }).catch(error => console.log(error))
-    }
+        signOut(auth)
+            .then(() => {
+                console.log("Signed Out");
+            })
+            .catch(error => console.log(error));
+    };
 
-  return (
-    <div>
-        {
-            authUser? <div><span>{authUser.email}</span> <button onClick={userSignOut} >Sign Out</button> </div> : <span>User Not Signed In</span>
-        }
-    </div>
-  )
-}
+    return (
+        <AuthContext.Provider value={{ loggedIn, userName, userEmail, userPhoto }}>
+            {children}
+        </AuthContext.Provider>
+    );
+};

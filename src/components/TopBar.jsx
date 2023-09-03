@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext, AuthDetails } from '../helper/AuthDetails';
 import "../css/TopBar.css";
 import Bell from "../icons/bell.png";
 import Search from "../icons/search.png";
-import Profile from "../icons/profile.jpg";
+import LoginIcon from "../icons/login_icon.png";
 
 export const TopBar = () => {
+
+  
+
+  const { loggedIn, userName, userEmail, userPhoto } = useContext(AuthContext);
+
   return (
+    <AuthDetails>
     <div className='top-bar-comp' >
       <div className='top-bar-head' >
         Dashboard
@@ -19,10 +26,14 @@ export const TopBar = () => {
           <img src={Bell} />
         </div>
         <div className='top-bar-id' >
-          <img src={Profile} />
+          {
+              loggedIn ? <img src={userPhoto} /> : <img src={LoginIcon} />
+          }
+          
         </div>
       </div>
         
     </div>
+    </AuthDetails>
   )
 }
