@@ -4,12 +4,16 @@
 }
 
 .chart-head-div {
-    padding: 10px 20px 0 20px;
+    padding: 20px 20px 0 20px;
+    /* border: 1px solid black; */
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
 }
 
 .graph-legends-div {
     font-size: 13px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 8px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
@@ -19,6 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#month {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 10px;
+    color: gray;
+    font-weight: 500;
 }
 
 .circle {
