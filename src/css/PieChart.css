@@ -4,12 +4,27 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: #ffff;
+    padding: 20px 0 20px 0;
 }
 
 .pie-chart-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px 0 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 0 20px 0 20px;
+}
+
+.pie-chart-header form {
+    border: none;
+    font-size: 5px;
+}
+
+#startMonth {
+    font-size: 10px;
+    
+    color: gray;
 }
 
 .pie-chart-main {
@@ -25,6 +40,7 @@
 .pie-chartitem {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 10px 0 5px 10px;
 }
 
@@ -36,6 +52,7 @@
 
 .item-amount {
     font-size: 10px;
+    margin-top: 5px;
     font-family: sans-serif;
     font-weight: 600;
     color: gray;

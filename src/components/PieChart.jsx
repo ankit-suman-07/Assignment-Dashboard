@@ -24,7 +24,27 @@ export const PieChart = () => {
     <div className='pie-chart-comp' >
       <div  className='pie-chart-header' >
           <span>Top Products </span>
-          <span>Sort</span>
+          <span>
+    <form>
+        <label for="startMonth"></label>
+        <select id="startMonth" name="startMonth">
+            <option value="0" selected>Jan - Feb 2023</option>
+            <option value="1">Feb - March 2023</option>
+            <option value="2">March - Apr 2023</option>
+            <option value="3">Apr - May 2023</option>
+            <option value="4">May - June 2023</option>
+            <option value="5">June - July 2023</option>
+            <option value="6">July - Aug 2023</option>
+            <option value="7">Aug - Sept 2023</option>
+            <option value="8">Sept - Oct 2023</option>
+            <option value="9">Oct - Nov 2023</option>
+            <option value="10">Nov - Dec 2023</option>
+            
+        </select>        
+
+    </form>
+
+          </span>
       </div>
       <div className='pie-chart-main' >
         <Chart
