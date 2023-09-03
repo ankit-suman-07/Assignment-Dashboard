@@ -15,11 +15,26 @@
 }
 
 .bold {
+    font-size: 15px;
     font-weight: 600;
 }
 
-.user-table {
-    /* border: 2px solid black; */
-    /* margin-top: 20px; */
-    /* padding: 10px; */
+.users-sort {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.users-sort button {
+    /* border: 1px solid black; */
+    padding: 5px;
+    font-size: 10px;
+    margin: 0 5px 0 5px;
+    background-color: #ffffff;
+    color: gray;
+    border-radius: 6px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

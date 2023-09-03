@@ -60,4 +60,22 @@ export const UserDB = [
         username: "Adeline Watson",
         email: "",
       },
+      {
+        id: 9,
+        img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        username: "Adeline Watson",
+        email: "",
+      },
+      {
+        id: 10,
+        img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        username: "Adeline Watson",
+        email: "",
+      },
+      {
+        id: 11,
+        img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        username: "Adeline Watson",
+        email: "",
+      },
 ];

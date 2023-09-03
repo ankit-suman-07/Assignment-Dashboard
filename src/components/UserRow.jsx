@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/UserRow.css";
+import UserIcon from "../icons/login_icon.png";
 
 export const UserRow = ({id, user}) => {
   return (
@@ -10,9 +11,15 @@ export const UserRow = ({id, user}) => {
             <span className='user-email' >{user.email}</span>
             {
                 user.email === "" ? (
+                  <>
                     <span className='user-type' >Guest</span>
+                    <span className='user-photo' > <img src={user.img} /> </span>
+                  </>
                 ) : (
+                  <>
                     <span className='user-type' >User</span>
+                    <span className='user-photo' > <img src={UserIcon} /> </span>
+                  </>
                 )
             }
     </div>
