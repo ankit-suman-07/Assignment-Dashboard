@@ -1,6 +1,5 @@
 .transaction-comp {
     background-color: #F5F5F5;
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +20,7 @@
 
 .transaction-row {
     display: grid;
-    grid-template-columns: 2fr 5fr 4fr 4fr;
+    grid-template-columns: 3fr 5fr 4fr 3fr;
     padding: 10px 0 10px 0;
     border-bottom: 1px solid black ;
     font-size: 12px;
@@ -51,4 +50,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .transaction-div {
+        /* border: 2px solid black; */
+        margin-top: 50px;
+        width: 100%;
+        padding: 20px;
+    }
 }

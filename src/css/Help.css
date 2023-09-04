@@ -13,3 +13,11 @@
     width: 85%;
     padding: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    .help-div {
+        /* border: 2px solid black; */
+        margin-top: 50px;
+        width: 100%;
+    }
+}

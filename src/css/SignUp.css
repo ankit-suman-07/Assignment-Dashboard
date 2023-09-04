@@ -71,6 +71,10 @@
     align-items: center;
 }
 
+.signup-btn button:hover {
+    cursor: pointer;
+}
+
 .signup-btn button img {
     height: 60%;
     margin-right: 5px;
@@ -114,6 +118,10 @@
     margin-top: 5px;
 }
 
+.signin-btn:hover {
+    cursor: pointer;
+}
+
 .signup-register {
     /* border: 2px solid black; */
     font-size: 12px;
@@ -121,3 +129,35 @@
     justify-content: center;
     margin-top: 15px;
 }
+
+@media screen and (max-width: 1100px) {
+    
+    .signup-border {        
+        width: 60%;
+        
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .sugnup-comp { 
+        flex-direction: column;
+    }
+    
+    .signup-border {        
+        width: 60%;
+        
+    }
+
+    .signup-logo {
+        width: 100vw;
+        height: 100px;
+        font-size: 40px;
+    }
+    
+    .signup-auth {
+        width: 100vw;
+        height: 100vh;
+    }
+  }
+  

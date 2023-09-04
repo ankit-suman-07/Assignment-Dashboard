@@ -1,5 +1,5 @@
 .sidebar-div {
-    border: 2px solid black;
+    /* border: 2px solid red; */
     background-color: #000000;
     width: 15%;
     height: calc(100vh - 100px);
@@ -21,6 +21,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
 }
+
+
 
 .logo-text {
     /* border: 2px solid white; */
@@ -59,4 +61,62 @@
 
 .bottom {
     font-size: 13px;
+}
+
+
+.sidebar-top-bar {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* border: 2px solid red; */
+        background-color: #000000;
+        font-weight: 600;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .sidebar-top-bar .logo-text {
+        margin-left: 10px;
+    }
+
+    .menu-btn {
+        height: 50px;
+        width: 50px;
+        border: 2px solid #ffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-btn img {
+        height: 100%;
+    }
+
+    #close {
+        display: none;
+        
+    }
+
+    #open {
+        position: fixed;
+        display: flex;
+        top: 0px;
+        left: 0px;
+        background-color: #000000;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        height: calc(100vh - 50px);
+        border-radius: 0px;
+        z-index: 999; 
+    }
 }

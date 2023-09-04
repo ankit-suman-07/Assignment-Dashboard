@@ -7,3 +7,14 @@
     padding: 20px;
     height: calc(100vh - 40px);
 }
+
+@media screen and (max-width: 1000px) {
+    .main-page-comp {
+        height: auto;
+    }
+
+    .main-page-comp {
+        margin-top: 50px;
+        padding: 0px;
+    }
+}

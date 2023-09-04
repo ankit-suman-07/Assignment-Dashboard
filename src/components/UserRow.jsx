@@ -13,12 +13,12 @@ export const UserRow = ({id, user}) => {
                 user.email === "" ? (
                   <>
                     <span className='user-type' >Guest</span>
-                    <span className='user-photo' > <img src={user.img} /> </span>
+                    <span className='user-photo' > <img src={UserIcon} /> </span>
                   </>
                 ) : (
                   <>
                     <span className='user-type' >User</span>
-                    <span className='user-photo' > <img src={UserIcon} /> </span>
+                    <span className='user-photo' > <img src={user.img} /> </span>
                   </>
                 )
             }
