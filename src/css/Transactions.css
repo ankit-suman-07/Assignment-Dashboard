@@ -23,13 +23,15 @@
     grid-template-columns: 3fr 5fr 4fr 3fr;
     padding: 10px 0 10px 0;
     border-bottom: 1px solid black ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
 
 
 .bold {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .transaction-sort {

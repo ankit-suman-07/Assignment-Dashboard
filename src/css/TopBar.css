@@ -8,13 +8,13 @@
 }
 
 .top-bar-head {
-    font-size: 25px;
-    font-family: sans-serif;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 .search-bar {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 5px;
     overflow: hidden;
     border-radius: 10px;
@@ -35,7 +35,6 @@
 }
 
 .top-bar-id {
-    /* border: 2px solid black; */
     height: 30px;
     border-radius: 50%;
     overflow: hidden;
@@ -43,4 +42,18 @@
 
 .top-bar-id img {
     height: 100%;
+}
+
+.search-bar input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .top-bar-profile {
+        grid-gap: 10px;
+    }
+
+    .search-bar input {
+        width: 100px;
+    }
 }

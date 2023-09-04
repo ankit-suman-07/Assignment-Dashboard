@@ -10,6 +10,7 @@
 .user-id, .user-name, .user-email, .user-type {
     /* border: 1px solid black; */
     padding: 12px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
 

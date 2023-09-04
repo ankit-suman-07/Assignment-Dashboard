@@ -25,8 +25,8 @@ export const PieChart = () => {
           <span>Top Products </span>
           <span>
     <form>
-        <label for="startMonth"></label>
-        <select id="startMonth" name="startMonth" value={selectedValue} onChange={handleChange}>
+        <label for="month"></label>
+        <select id="month" name="month" value={selectedValue} onChange={handleChange}>
             <option value="0" selected>Jan - Feb 2023</option>
             <option value="1">Feb - March 2023</option>
             <option value="2">March - Apr 2023</option>

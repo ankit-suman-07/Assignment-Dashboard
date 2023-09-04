@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500&display=swap');
+
 .sidebar-div {
     /* border: 2px solid red; */
     background-color: #000000;
@@ -18,7 +20,7 @@
 .sidebar-logo {
     margin-bottom: 40px;
     padding-left: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -51,7 +53,7 @@
     grid-gap: 15px;
     text-decoration: none;
     color: #ffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar-bottom {
@@ -94,6 +96,7 @@
         width: 50px;
         border: 2px solid #ffff;
         border-radius: 50%;
+        margin-right: 25px;
         display: flex;
         justify-content: center;
     }
